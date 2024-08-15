@@ -64,16 +64,16 @@ layers:
   - {t: fn, h: toggle}
   - '`'
   - CAPS
-  - LEFT
-  - RIGHT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: BACKSPACE, h: num}
   - TAB
   - END
   - PG DN
   - {t: ENTER, h: symbols}
   - {t: SPACE, h: nav}
-  - UP
-  - DOWN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '['
   - ']'
   - {t: fn, h: toggle}
