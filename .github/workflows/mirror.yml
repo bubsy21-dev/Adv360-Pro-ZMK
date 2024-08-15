@@ -1,20 +1,21 @@
-name: Mirror to GitLab
+name: Mirror and run GitLab CI
 
-on:
-  push:
-    branches:
-      - miryoku  # Adjust this to your default branch
+on: [push]
 
 jobs:
-  mirror:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Push to GitLab
-        env:
-          GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
-        run: |
-          git remote add gitlab https://oauth2:${GITLAB_TOKEN}@gitlab.com/username/repo.git
-          git push gitlab main  # Adjust this to your default branch
+    - uses: actions/checkout@v1
+    - name: Mirror + trigger CI
+      uses: SvanBoxel/gitlab-mirror-and-ci-action@master
+      with:
+        args: "https://gitlab.com/bubsy21/Adv360-Pro-ZMK"
+      env:
+        FOLLOW_TAGS: "false"
+        FORCE_PUSH: "false"
+        GITLAB_HOSTNAME: "gitlab.com"
+        GITLAB_USERNAME: "bubsy21"
+        GITLAB_PASSWORD: ${{ secrets.GITLAB_TOKEN }} // Generate here: https://gitlab.com/profile/personal_access_tokens
+        GITLAB_PROJECT_ID: "<60887536>" // https://gitlab.com/<namespace>/<repository>/edit
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} // https://docs.github.com/en/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
