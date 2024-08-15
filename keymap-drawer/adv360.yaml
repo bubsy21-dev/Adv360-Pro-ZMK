@@ -47,7 +47,7 @@ layers:
   - {t: I, h: RIGHT ALT}
   - {t: O, h: RIGHT GUI}
   - ''''
-  - LSHFT
+  - {t: ▽, type: trans}
   - Z
   - X
   - C
