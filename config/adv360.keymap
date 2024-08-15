@@ -23,10 +23,14 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick_tap_ms = <175>;
-            flavor = "tap-preferred";
+            tapping-term-ms = <280>;
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
+
+            require-prior-idle-ms = <150>;
+            quick-tap-ms = <175>;
+            hold-trigger-key-positions = <55 56 57 58>;
+            hold-trigger-on-release;
         };
     };
 
@@ -38,11 +42,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &trans          &trans          &trans              &trans            &trans  &tog 3                                                     &mo 4        &trans  &trans             &trans                   &trans                &trans               &kp MINUS
-&kp TAB    &kp Q           &kp W           &kp F               &kp P             &kp B   &none                                                      &none        &kp J   &kp L              &kp U                    &kp Y                 &kp SEMICOLON        &kp BSLH
-&kp ESC    &kp A           &kp R           &kp S               &kp T             &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL    &none        &kp M   &kp N              &kp E                    &kp I                 &kp O                &kp SQT
-&kp LSHFT  &mt LEFT_GUI Z  &mt LEFT_ALT X  &mt LEFT_CONTROL C  &mt LEFT_SHIFT D  &kp V                        &kp HOME      &kp PG_UP                            &kp K   &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL COMMA  &mt RIGHT_ALT PERIOD  &mt RIGHT_GUI SLASH  &kp RSHFT
-&mo 3      &kp GRAVE       &kp CAPS        &kp LEFT            &kp RIGHT                 &kp BSPC  &kp TAB    &kp END       &kp PG_DN  &lt 1 ENTER  &lt 2 SPACE          &kp UP             &kp DOWN                 &kp LBKT              &kp RBKT             &mo 3
+&kp EQUAL  &trans          &trans          &trans              &trans            &trans  &tog 3                                                            &mo 4        &trans  &trans             &trans               &trans           &trans           &kp MINUS
+&kp TAB    &kp Q           &kp W           &kp F               &kp P             &kp B   &none                                                             &none        &kp J   &kp L              &kp U                &kp Y            &kp SEMICOLON    &kp BSLH
+&kp ESC    &mt LEFT_WIN A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G   &none            &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL    &none        &kp M   &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_ALT I  &mt RIGHT_GUI O  &kp SQT
+&kp LSHFT  &kp Z           &kp X           &kp C               &kp D             &kp V                               &kp HOME      &kp PG_UP                            &kp K   &kp H              &kp COMMA            &kp DOT          &kp FSLH         &kp RSHFT
+&tog 3     &kp GRAVE       &kp CAPS        &kp LEFT            &kp RIGHT                 &lt 5 BACKSPACE  &kp TAB    &kp END       &kp PG_DN  &lt 1 ENTER  &lt 2 SPACE          &kp UP             &kp DOWN             &kp LBKT         &kp RBKT         &tog 3
             >;
         };
 
@@ -69,8 +73,8 @@
         fn {
             bindings = <
 &trans  &trans    &trans    &trans     &trans     &trans  &tog 0                                      &mo 3   &trans        &trans  &trans  &trans  &trans   &trans
-&trans  &trans    &trans    &trans     &trans     &trans  &none                                       &none   &trans        &kp F7  &kp F8  &kp F9  &kp F10  &trans
-&trans  &trans    &trans    &trans     &trans     &trans  &none   &trans  &trans      &trans  &trans  &trans  &kp RS(F11)   &kp F4  &kp F5  &kp F6  &kp F11  &trans
+&trans  &trans    &trans    &trans     &trans     &trans  &trans                                      &none   &trans        &kp F7  &kp F8  &kp F9  &kp F10  &trans
+&trans  &trans    &trans    &trans     &trans     &trans  &to 0   &trans  &trans      &trans  &trans  &trans  &kp RS(F11)   &kp F4  &kp F5  &kp F6  &kp F11  &trans
 &trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans                  &trans      &trans                  &kp LC(PLUS)  &kp F1  &kp F2  &kp F3  &kp F12  &trans
 &trans  &trans    &trans    &trans     &trans             &trans  &trans  &trans      &trans  &trans  &trans                &trans  &trans  &trans  &trans   &trans
             >;
@@ -86,23 +90,13 @@
             >;
         };
 
-        layer_5 {
+        layer_num {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans  &trans                                      &trans   &trans        &trans  &trans  &trans  &trans        &trans
-&trans  &trans    &trans    &trans     &trans     &trans  &trans                                      &trans   &kp LS(PLUS)  &kp N7  &kp N8  &kp N9  &kp LS(STAR)  &trans
-&trans  &trans    &trans    &trans     &trans     &trans  &trans  &trans  &trans      &trans  &trans  &trans   &kp MINUS     &kp N4  &kp N5  &kp N6  &kp FSLH      &trans
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans                  &trans      &trans                   &kp EQUAL     &kp N1  &kp N2  &kp N3  &kp BSLH      &trans
-&trans  &trans    &trans    &trans     &trans             &trans  &trans  &trans      &trans  &trans  &kp DOT                &trans  &trans  &trans  &trans        &trans
+&trans  &trans    &trans    &trans     &trans     &trans  &trans                                            &trans   &trans        &trans  &trans  &trans  &trans        &trans
+&trans  &trans    &trans    &trans     &trans     &trans  &trans                                            &trans   &kp LS(PLUS)  &kp N7  &kp N8  &kp N9  &kp LS(STAR)  &trans
+&trans  &trans    &trans    &trans     &trans     &trans  &trans  &trans  &trans      &trans  &trans        &trans   &kp MINUS     &kp N4  &kp N5  &kp N6  &kp FSLH      &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans                  &trans      &trans                         &kp EQUAL     &kp N1  &kp N2  &kp N3  &kp BSLH      &trans
+&trans  &trans    &trans    &trans     &trans             &trans  &trans  &trans      &trans  &mt ENTER N0  &kp DOT                &trans  &trans  &trans  &trans        &trans
             >;
         };
     };
