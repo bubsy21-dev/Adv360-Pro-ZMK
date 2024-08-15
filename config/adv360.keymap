@@ -44,7 +44,7 @@
             bindings = <
 &kp EQUAL  &trans          &trans          &trans              &trans            &trans  &tog 3                                                            &mo 4        &trans  &trans             &trans               &trans           &trans           &kp MINUS
 &kp TAB    &kp Q           &kp W           &kp F               &kp P             &kp B   &none                                                             &none        &kp J   &kp L              &kp U                &kp Y            &kp SEMICOLON    &kp BSLH
-&kp ESC    &mt LEFT_WIN A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G   &none            &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL    &none        &kp M   &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_ALT I  &mt RIGHT_GUI O  &kp SQT
+&kp ESC    &hm LEFT_WIN A  &hm LEFT_ALT R  &hm LEFT_CONTROL S  &hm LEFT_SHIFT T  &kp G   &none            &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL    &none        &kp M   &hm RIGHT_SHIFT N  &hm RIGHT_CONTROL E  &hm RIGHT_ALT I  &hm RIGHT_GUI O  &kp SQT
 &kp LSHFT  &kp Z           &kp X           &kp C               &kp D             &kp V                               &kp HOME      &kp PG_UP                            &kp K   &kp H              &kp COMMA            &kp DOT          &kp FSLH         &kp RSHFT
 &tog 3     &kp GRAVE       &kp CAPS        &kp LEFT            &kp RIGHT                 &lt 5 BACKSPACE  &kp TAB    &kp END       &kp PG_DN  &lt 1 ENTER  &lt 2 SPACE          &kp UP             &kp DOWN             &kp LBKT         &kp RBKT         &tog 3
             >;
