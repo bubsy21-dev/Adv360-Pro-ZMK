@@ -3,7 +3,7 @@ name: Mirror to GitLab
 on:
   push:
     branches:
-      - main  # Adjust this to your default branch
+      - miryoku  # Adjust this to your default branch
 
 jobs:
   mirror:
