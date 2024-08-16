@@ -1,13 +1,13 @@
 layout: {qmk_keyboard: adv360}
 layers:
   default:
-  - '='
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: fn, h: toggle}
+  - {t: ▽, type: trans}
+  - mod
   - mod
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -15,7 +15,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - TAB
+  - {t: ▽, type: trans}
   - Q
   - W
   - F
@@ -28,7 +28,7 @@ layers:
   - U
   - Y
   - ;
-  - \
+  - {t: ▽, type: trans}
   - ESC
   - {t: A, h: LEFT WIN}
   - {t: R, h: LEFT ALT}
@@ -46,7 +46,7 @@ layers:
   - {t: E, h: RIGHT CONTROL}
   - {t: I, h: RIGHT ALT}
   - {t: O, h: RIGHT GUI}
-  - ''''
+  - CAPS
   - {t: ▽, type: trans}
   - Z
   - X
@@ -60,12 +60,12 @@ layers:
   - ','
   - .
   - /
-  - RSHFT
+  - {t: ▽, type: trans}
   - {t: fn, h: toggle}
-  - '`'
-  - CAPS
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Hyper+ `
+  - '&caps_word'
+  - VOL DN
+  - VOL UP
   - {t: BACKSPACE, h: num}
   - TAB
   - END
@@ -74,9 +74,9 @@ layers:
   - {t: SPACE, h: nav}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '['
-  - ']'
-  - {t: fn, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - mod
   symbols:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -143,12 +143,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: BACKSPACE, type: held}
   - SPACE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -315,8 +315,8 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - ''
   - {type: held}
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
@@ -325,9 +325,9 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
+  - MUTE
+  - VOL DN
+  - VOL UP
   - ''
   - '&bootloader'
   - '&bootloader'
@@ -339,15 +339,15 @@ layers:
   - ''
   - ''
   - ''
+  - PREV
+  - PP
+  - NEXT
   - ''
   - ''
+  - '&bootloader'
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - BT CLR
-  - ''
+  - {t: ▽, type: trans}
+  - '&bootloader'
   - RGB MEFS CMD 5
   - ''
   - ''
@@ -357,15 +357,12 @@ layers:
   - ''
   - ''
   - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
-  - ''
-  - '&macro_ver'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - BT CLR
+  - BT CLR
   - ''
   - ''
   - ''
@@ -377,9 +374,12 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - '&bl BL_DEC'
+  - '&bl BL_INC'
   - '&bl BL_TOG'
-  - RGB TOG
+  - ''
+  - PP
+  - MUTE
   - '&bl BL_INC'
   - '&bl BL_DEC'
   - ''
@@ -455,8 +455,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '0', h: ENTER}
-  - .
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
