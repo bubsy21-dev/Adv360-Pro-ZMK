@@ -10,13 +10,6 @@
       #include "version.dtsi"
       #ifndef VERSION_MACRO
 
-        vim_quit: macro_ver {
-            compatible = "zmk,behavior-macro";
-            label = "macro_version";
-            #binding-cells = <0>;
-            bindings = <&kp COLON &kp Q &kp EXCLAMATION>;
-        };
-
         vim_write: vim_write {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -24,11 +17,11 @@
             label = "VIM_WRITE";
         };
 
-        new_macro: new_macro {
+        vim_quit: vim_quit {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
-            label = "NEW_MACRO";
+            bindings = <&kp COLON &kp Q>;
+            label = "VIM_QUIT";
         };
 
         #endif
