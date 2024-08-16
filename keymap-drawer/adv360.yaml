@@ -36,10 +36,10 @@ layers:
   - {t: T, h: LEFT SHIFT}
   - G
   - ''
-  - LCTRL
-  - LALT
-  - LGUI
-  - RCTRL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
   - M
   - {t: N, h: RIGHT SHIFT}
@@ -143,7 +143,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - SPACE
+  - BACKSPACE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
