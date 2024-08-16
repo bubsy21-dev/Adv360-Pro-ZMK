@@ -62,8 +62,8 @@ layers:
   - /
   - {t: ▽, type: trans}
   - {t: fn, h: toggle}
-  - Hyper+ `
   - '&caps_word'
+  - {t: ▽, type: trans}
   - LEFT ARROW
   - RIGHT
   - {t: BACKSPACE, h: num}
