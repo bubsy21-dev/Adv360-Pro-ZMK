@@ -27,7 +27,7 @@
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
 
-            require-prior-idle-ms = <130>;
+            require-prior-idle-ms = <100>;
             quick-tap-ms = <175>;
             hold-trigger-key-positions = <29 30 31 32 41 42 43 44>;
             hold-trigger-on-release;
