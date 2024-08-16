@@ -35,7 +35,7 @@ layers:
   - {t: S, h: LEFT CONTROL}
   - {t: T, h: LEFT SHIFT}
   - G
-  - ''
+  - {t: nav, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -194,7 +194,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: default, h: toggle}
   - CAPS
   - LEFT
   - DOWN
@@ -220,12 +220,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - SPACE
-  - TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - ENTER
+  - {t: SPACE, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -324,8 +324,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - {t: ▽, type: trans}
+  - '&vim_quit'
+  - '&vim_write'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
