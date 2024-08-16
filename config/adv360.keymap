@@ -46,7 +46,7 @@
 &trans   &kp Q                      &kp W           &kp F               &kp P             &kp B   &none                                                           &none        &kp J   &kp L              &kp U                &kp Y            &kp SEMICOLON    &trans
 &kp ESC  &hm LEFT_WIN A             &hm LEFT_ALT R  &hm LEFT_CONTROL S  &hm LEFT_SHIFT T  &kp G   &none            &trans   &trans        &trans     &trans       &none        &kp M   &hm RIGHT_SHIFT N  &hm RIGHT_CONTROL E  &hm RIGHT_ALT I  &hm RIGHT_GUI O  &kp CAPS
 &trans   &kp Z                      &kp X           &kp C               &kp D             &kp V                             &kp HOME      &kp PG_UP                            &kp K   &kp H              &kp COMMA            &kp DOT          &kp FSLH         &trans
-&tog 3   &kp LS(LC(LA(LG(GRAVE))))  &caps_word      &kp C_VOL_DN        &kp C_VOL_UP              &lt 5 BACKSPACE  &kp TAB  &kp END       &kp PG_DN  &lt 1 ENTER  &lt 2 SPACE          &trans             &trans               &trans           &trans           &mo 4
+&tog 3   &kp LS(LC(LA(LG(GRAVE))))  &caps_word      &kp LEFT_ARROW      &kp RIGHT                 &lt 5 BACKSPACE  &kp TAB  &kp END       &kp PG_DN  &lt 1 ENTER  &lt 2 SPACE          &kp C_VOL_DN       &kp C_VOL_UP         &trans           &trans           &mo 4
             >;
         };
 
