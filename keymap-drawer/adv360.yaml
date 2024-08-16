@@ -61,7 +61,7 @@ layers:
   - .
   - /
   - {t: ▽, type: trans}
-  - {t: fn, h: toggle}
+  - fn
   - '&caps_word'
   - {t: ▽, type: trans}
   - LEFT ARROW
@@ -74,8 +74,8 @@ layers:
   - {t: SPACE, h: nav}
   - UP ARROW
   - DOWN
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - VOLUME DOWN
+  - VOL UP
   - mod_macros
   symbols:
   - {t: ▽, type: trans}
@@ -292,7 +292,7 @@ layers:
   - F3
   - F12
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
