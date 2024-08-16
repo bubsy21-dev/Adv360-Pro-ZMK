@@ -64,16 +64,16 @@ layers:
   - {t: fn, h: toggle}
   - Hyper+ `
   - '&caps_word'
-  - VOL DN
-  - VOL UP
+  - LEFT ARROW
+  - RIGHT
   - {t: BACKSPACE, h: num}
   - TAB
   - END
   - PG DN
   - {t: ENTER, h: symbols}
   - {t: SPACE, h: nav}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - VOL DN
+  - VOL UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - mod
