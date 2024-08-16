@@ -47,7 +47,7 @@ layers:
   - {t: I, h: RIGHT ALT}
   - {t: O, h: RIGHT GUI}
   - {t: ▽, type: trans}
-  - LEFT SHIFT
+  - {t: ▽, type: trans}
   - Z
   - X
   - C
