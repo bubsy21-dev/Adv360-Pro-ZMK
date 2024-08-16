@@ -15,7 +15,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - TAB
   - Q
   - W
   - F
@@ -46,7 +46,7 @@ layers:
   - {t: E, h: RIGHT CONTROL}
   - {t: I, h: RIGHT ALT}
   - {t: O, h: RIGHT GUI}
-  - CAPS
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Z
   - X
@@ -72,8 +72,8 @@ layers:
   - PG DN
   - {t: ENTER, h: symbols}
   - {t: SPACE, h: nav}
-  - VOL DN
-  - VOL UP
+  - UP ARROW
+  - DOWN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - mod_macros
@@ -462,7 +462,3 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-combos:
-- p: [40, 41]
-  k: BACKSPACE
-  l: [default]
