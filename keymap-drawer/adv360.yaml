@@ -67,7 +67,7 @@ layers:
   - LEFT ARROW
   - RIGHT
   - {t: BACKSPACE, h: num}
-  - LEFT SHIFT
+  - {t: LEFT SHIFT, h: symbols}
   - END
   - PG DN
   - {t: ENTER, h: symbols}
@@ -144,10 +144,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BACKSPACE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -324,8 +324,8 @@ layers:
   - ''
   - ''
   - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&vim_quit'
+  - '&vim_quit'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
