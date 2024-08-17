@@ -10,20 +10,6 @@
       #include "version.dtsi"
       #ifndef VERSION_MACRO
 
-        vim_write: vim_write {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp COLON &kp W>;
-            label = "VIM_WRITE";
-        };
-
-        vim_quit: vim_quit {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp COLON &kp Q>;
-            label = "VIM_QUIT";
-        };
-
         #endif
 
         hm: homerow_mods {
@@ -54,6 +40,21 @@
     };
 
     macros {
+
+        vim_write: vim_write {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp W>;
+            label = "VIM_WRITE";
+        };
+
+        vim_quit: vim_quit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp Q>;
+            label = "VIM_QUIT";
+        };
+
     };
 
     combos { compatible = "zmk,combos"; };
