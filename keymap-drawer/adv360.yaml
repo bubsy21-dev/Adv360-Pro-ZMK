@@ -170,8 +170,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&vim_quit'
+  - '&vim_write'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -324,8 +324,8 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - ''
-  - '&vim_quit'
-  - '&vim_quit'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
