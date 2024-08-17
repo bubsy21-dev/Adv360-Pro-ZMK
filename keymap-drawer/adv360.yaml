@@ -322,7 +322,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {t: ▽, type: trans}
   - ''
   - '&vim_quit'
   - '&vim_quit'
