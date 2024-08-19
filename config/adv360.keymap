@@ -41,8 +41,8 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            quick-tap-ms = <125>;
-            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            tapping-term-ms = <280>;
             hold-trigger-key-positions = <65>;
             flavor = "balanced";
         };
