@@ -78,6 +78,16 @@
             bindings = <&kp TAB>;
             key-positions = <23 24>;
         };
+
+        combo_vimwrite {
+            bindings = <&vim_write>;
+            key-positions = <49 50>;
+        };
+
+        combo_vimquit {
+            bindings = <&vim_quit>;
+            key-positions = <54 55>;
+        };
     };
 
     keymap {
