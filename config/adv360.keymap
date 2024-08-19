@@ -26,16 +26,24 @@
             hold-trigger-on-release;
         };
 
-        backspace: backspace {
+        smart_shift: smart_shift {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SMART_SHIFT";
+            bindings = <&sk LEFT_SHIFT>, <&caps_word>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        smart_backspace: smart_backspace {
             compatible = "zmk,behavior-hold-tap";
-            label = "BACKSPACE";
-            bindings = <&none>, <&none>;
+            label = "SMART_BACKSPACE";
+            bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
             hold-trigger-key-positions = <65>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
         };
     };
 
@@ -55,48 +63,55 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        esc_homerow {
+            bindings = <&kp ESC>;
+            key-positions = <32 31>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&trans   &trans          &trans          &trans              &trans            &trans  &mo 4                                                                    &mo 4        &trans  &trans             &trans               &trans             &trans           &trans
-&kp TAB  &kp Q           &kp W           &kp F               &kp P             &kp B   &none                                                                    &none        &kp J   &kp L              &kp U                &kp Y              &kp SEMICOLON    &trans
-&kp ESC  &hm LEFT_WIN A  &hm LEFT_ALT R  &hm LEFT_CONTROL S  &hm LEFT_SHIFT T  &kp G   &tog 2           &trans            &trans        &trans     &trans       &none        &kp M   &hm RIGHT_SHIFT N  &hm RIGHT_CONTROL E  &hm RIGHT_ALT I    &hm RIGHT_GUI O  &trans
-&trans   &kp Z           &kp X           &kp C               &kp D             &kp V                                      &kp HOME      &kp PG_UP                            &kp K   &kp H              &kp COMMA            &kp DOT            &kp SLASH        &trans
-&mo 3    &caps_word      &trans          &kp LEFT_ARROW      &kp RIGHT                 &lt 5 BACKSPACE  &lt 1 LEFT_SHIFT  &kp END       &kp PG_DN  &lt 1 ENTER  &lt 2 SPACE          &kp UP_ARROW       &kp DOWN             &kp C_VOLUME_DOWN  &kp C_VOL_UP     &mo 4
+&trans   &trans          &trans          &trans              &trans     &trans  &mo 4                                                                  &mo 4        &trans  &trans        &trans               &trans             &trans           &trans
+&kp TAB  &kp Q           &kp W           &kp F               &kp P      &kp B   &none                                                                  &none        &kp J   &kp L         &kp U                &kp Y              &kp SEMICOLON    &trans
+&kp ESC  &hm LEFT_WIN A  &hm LEFT_ALT R  &hm LEFT_CONTROL S  &kp T      &kp G   &tog 2           &mo 1           &trans        &trans     &trans       &none        &kp M   &kp N         &hm RIGHT_CONTROL E  &hm RIGHT_ALT I    &hm RIGHT_GUI O  &trans
+&trans   &kp Z           &kp X           &kp C               &kp D      &kp V                                    &kp HOME      &kp PG_UP                            &kp K   &kp H         &kp COMMA            &kp DOT            &kp SLASH        &trans
+&mo 3    &trans          &trans          &kp LEFT_ARROW      &kp RIGHT          &lt 5 BACKSPACE  &sk LEFT_SHIFT  &kp END       &kp PG_DN  &lt 1 ENTER  &lt 2 SPACE          &kp UP_ARROW  &kp DOWN             &kp C_VOLUME_DOWN  &kp C_VOL_UP     &mo 4
             >;
         };
 
         layer_symbols {
             bindings = <
-&trans  &trans           &trans          &trans        &trans         &trans         &trans                                             &trans  &trans         &trans        &trans        &trans         &trans       &trans
-&trans  &kp SQT          &kp TILDE       &kp HASH      &kp AMPERSAND  &kp PIPE       &trans                                             &trans  &kp LS(CARET)  &kp LS(LBRC)  &kp LS(RBRC)  &kp LBKT       &kp RBKT     &trans
-&trans  &kp EXCLAMATION  &kp UNDERSCORE  &kp COLON     &kp EQUAL      &kp DOLLAR     &trans         &trans  &trans      &trans  &trans  &trans  &kp LS(AT)     &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(UNDER)  &kp SEMI     &trans
-&trans  &kp PERCENT      &kp QUESTION    &kp ASTERISK  &kp PLUS       &kp BACKSLASH                         &trans      &trans                  &kp FSLH       &kp MINUS     &kp LS(LT)    &kp LS(GT)     &kp LS(DQT)  &trans
-&trans  &trans           &trans          &trans        &trans                        &kp BACKSPACE  &trans  &trans      &trans  &trans  &trans                 &trans        &trans        &trans         &trans       &trans
+&trans  &trans           &trans          &trans        &trans         &trans         &trans                                                     &trans  &trans         &trans        &trans        &trans         &trans       &trans
+&trans  &kp SQT          &kp TILDE       &kp HASH      &kp AMPERSAND  &kp PIPE       &trans                                                     &trans  &kp LS(CARET)  &kp LS(LBRC)  &kp LS(RBRC)  &kp LBKT       &kp RBKT     &trans
+&trans  &kp EXCLAMATION  &kp UNDERSCORE  &kp COLON     &kp EQUAL      &kp DOLLAR     &trans         &trans          &trans      &trans  &trans  &trans  &kp LS(AT)     &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(UNDER)  &kp SEMI     &trans
+&trans  &kp PERCENT      &kp QUESTION    &kp ASTERISK  &kp PLUS       &kp BACKSLASH                                 &trans      &trans                  &kp FSLH       &kp MINUS     &kp LS(LT)    &kp LS(GT)     &kp LS(DQT)  &trans
+&trans  &trans           &trans          &trans        &trans                        &kp BACKSPACE  &sk LEFT_SHIFT  &trans      &trans  &trans  &trans                 &trans        &trans        &trans         &trans       &trans
             >;
         };
 
         layer_nav {
             bindings = <
-&trans  &trans     &trans      &trans     &trans     &trans  &trans                                         &trans     &trans     &trans     &trans     &trans        &trans     &trans
-&trans  &vim_quit  &vim_write  &trans     &trans     &trans  &trans                                         &trans     &kp RC(Y)  &kp RC(V)  &kp RC(C)  &kp RC(X)     &kp RC(Z)  &trans
-&trans  &kp LGUI   &kp LALT    &kp LCTRL  &kp LSHFT  &trans  &trans  &trans  &trans      &trans  &trans     &tog 0     &kp CAPS   &kp LEFT   &kp DOWN   &kp UP_ARROW  &kp RIGHT  &trans
-&trans  &trans     &trans      &trans     &trans     &trans                  &trans      &trans                        &kp INS    &kp HOME   &kp PG_DN  &kp PG_UP     &kp END    &trans
-&trans  &trans     &trans      &trans     &trans             &trans  &trans  &trans      &trans  &kp ENTER  &kp SPACE             &trans     &trans     &trans        &trans     &trans
+&trans  &trans     &trans      &trans     &trans  &trans  &trans                                                 &trans     &trans     &trans     &trans     &trans        &trans     &trans
+&trans  &vim_quit  &vim_write  &trans     &trans  &trans  &trans                                                 &trans     &kp RC(Y)  &kp RC(V)  &kp RC(C)  &kp RC(X)     &kp RC(Z)  &trans
+&trans  &kp LGUI   &kp LALT    &kp LCTRL  &trans  &trans  &trans  &trans          &trans      &trans  &trans     &tog 0     &kp CAPS   &kp LEFT   &kp DOWN   &kp UP_ARROW  &kp RIGHT  &trans
+&trans  &trans     &trans      &trans     &trans  &trans                          &trans      &trans                        &kp INS    &kp HOME   &kp PG_DN  &kp PG_UP     &kp END    &trans
+&trans  &trans     &trans      &trans     &trans          &trans  &sk LEFT_SHIFT  &trans      &trans  &kp ENTER  &kp SPACE             &trans     &trans     &trans        &trans     &trans
             >;
         };
 
         fn {
             bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans  &tog 0                                      &mo 3   &trans        &trans  &trans  &trans  &trans   &trans
-&trans  &trans    &trans    &trans     &trans     &trans  &trans                                      &none   &trans        &kp F7  &kp F8  &kp F9  &kp F10  &trans
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans  &to 0   &trans  &trans      &trans  &trans  &trans  &kp RS(F11)   &kp F4  &kp F5  &kp F6  &kp F11  &trans
-&trans  &trans    &trans    &trans     &trans     &trans                  &trans      &trans                  &kp LC(PLUS)  &kp F1  &kp F2  &kp F3  &kp F12  &trans
-&trans  &trans    &trans    &trans     &trans             &trans  &trans  &trans      &trans  &trans  &trans                &trans  &trans  &trans  &trans   &trans
+&trans  &trans    &trans    &trans     &trans     &trans  &tog 0                                              &mo 3   &trans        &trans  &trans  &trans  &trans   &trans
+&trans  &trans    &trans    &trans     &trans     &trans  &trans                                              &none   &trans        &kp F7  &kp F8  &kp F9  &kp F10  &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans  &to 0   &trans          &trans      &trans  &trans  &trans  &kp RS(F11)   &kp F4  &kp F5  &kp F6  &kp F11  &trans
+&trans  &trans    &trans    &trans     &trans     &trans                          &trans      &trans                  &kp LC(PLUS)  &kp F1  &kp F2  &kp F3  &kp F12  &trans
+&trans  &trans    &trans    &trans     &trans             &trans  &sk LEFT_SHIFT  &trans      &trans  &trans  &trans                &trans  &trans  &trans  &trans   &trans
             >;
         };
 
@@ -112,11 +127,11 @@
 
         layer_num {
             bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans  &trans                                      &trans        &trans        &trans  &trans  &trans  &trans        &trans
-&trans  &trans    &trans    &trans     &trans     &trans  &trans                                      &trans        &kp LS(PLUS)  &kp N7  &kp N8  &kp N9  &kp LS(STAR)  &trans
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans  &trans  &trans  &trans      &trans  &trans  &trans        &kp MINUS     &kp N4  &kp N5  &kp N6  &kp FSLH      &trans
-&trans  &trans    &trans    &trans     &trans     &trans                  &trans      &trans                        &kp EQUAL     &kp N1  &kp N2  &kp N3  &kp BSLH      &trans
-&trans  &trans    &trans    &trans     &trans             &trans  &trans  &trans      &trans  &trans  &kp NUMBER_0                &trans  &trans  &trans  &trans        &trans
+&trans  &trans    &trans    &trans     &trans     &trans  &trans                                              &trans        &trans        &trans  &trans  &trans  &trans        &trans
+&trans  &trans    &trans    &trans     &trans     &trans  &trans                                              &trans        &kp LS(PLUS)  &kp N7  &kp N8  &kp N9  &kp LS(STAR)  &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans  &trans  &trans          &trans      &trans  &trans  &trans        &kp MINUS     &kp N4  &kp N5  &kp N6  &kp FSLH      &trans
+&trans  &trans    &trans    &trans     &trans     &trans                          &trans      &trans                        &kp EQUAL     &kp N1  &kp N2  &kp N3  &kp BSLH      &trans
+&trans  &trans    &trans    &trans     &trans             &trans  &sk LEFT_SHIFT  &trans      &trans  &trans  &kp NUMBER_0                &trans  &trans  &trans  &trans        &trans
             >;
         };
     };
