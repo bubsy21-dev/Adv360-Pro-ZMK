@@ -33,16 +33,16 @@ layers:
   - {t: A, h: LEFT WIN}
   - {t: R, h: LEFT ALT}
   - {t: S, h: LEFT CONTROL}
-  - {t: T, h: LEFT SHIFT}
+  - T
   - G
   - {t: nav, h: toggle}
-  - {t: ▽, type: trans}
+  - symbols
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
   - M
-  - {t: N, h: RIGHT SHIFT}
+  - N
   - {t: E, h: RIGHT CONTROL}
   - {t: I, h: RIGHT ALT}
   - {t: O, h: RIGHT GUI}
@@ -62,12 +62,12 @@ layers:
   - /
   - {t: ▽, type: trans}
   - fn
-  - '&caps_word'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LEFT ARROW
   - RIGHT
   - {t: BACKSPACE, h: num}
-  - {t: LEFT SHIFT, h: symbols}
+  - {t: LEFT SHIFT, h: sticky}
   - END
   - PG DN
   - {t: ENTER, h: symbols}
@@ -113,7 +113,7 @@ layers:
   - '='
   - $
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -144,7 +144,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BACKSPACE
-  - {type: held}
+  - {t: LEFT SHIFT, h: sticky}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -187,7 +187,7 @@ layers:
   - LGUI
   - LALT
   - LCTRL
-  - LSHFT
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -221,7 +221,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: LEFT SHIFT, h: sticky}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ENTER
@@ -298,7 +298,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: LEFT SHIFT, h: sticky}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -452,7 +452,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
+  - {t: LEFT SHIFT, h: sticky}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -462,3 +462,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+combos:
+- p: [32, 31]
+  k: ESC
