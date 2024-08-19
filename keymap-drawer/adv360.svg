@@ -463,6 +463,14 @@ path.combo {
 <rect rx="6" ry="6" x="756" y="71" width="28" height="26" class="combo"/>
 <text x="770" y="84" class="combo tap">TAB</text>
 </g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="224" y="183" width="28" height="26" class="combo"/>
+<text x="238" y="196" class="combo tap"><tspan style="font-size: 70%">&amp;vim_write</tspan></text>
+</g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="700" y="183" width="28" height="26" class="combo"/>
+<text x="714" y="196" class="combo tap"><tspan style="font-size: 78%">&amp;vim_quit</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 493)" class="layer-symbols">
@@ -802,6 +810,14 @@ path.combo {
 <rect rx="6" ry="6" x="756" y="71" width="28" height="26" class="combo"/>
 <text x="770" y="84" class="combo tap">TAB</text>
 </g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="224" y="183" width="28" height="26" class="combo"/>
+<text x="238" y="196" class="combo tap"><tspan style="font-size: 70%">&amp;vim_write</tspan></text>
+</g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="700" y="183" width="28" height="26" class="combo"/>
+<text x="714" y="196" class="combo tap"><tspan style="font-size: 78%">&amp;vim_quit</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 986)" class="layer-nav">
@@ -1140,6 +1156,14 @@ path.combo {
 <rect rx="6" ry="6" x="756" y="71" width="28" height="26" class="combo"/>
 <text x="770" y="84" class="combo tap">TAB</text>
 </g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="224" y="183" width="28" height="26" class="combo"/>
+<text x="238" y="196" class="combo tap"><tspan style="font-size: 70%">&amp;vim_write</tspan></text>
+</g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="700" y="183" width="28" height="26" class="combo"/>
+<text x="714" y="196" class="combo tap"><tspan style="font-size: 78%">&amp;vim_quit</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1479)" class="layer-fn">
@@ -1467,6 +1491,14 @@ path.combo {
 <rect rx="6" ry="6" x="756" y="71" width="28" height="26" class="combo"/>
 <text x="770" y="84" class="combo tap">TAB</text>
 </g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="224" y="183" width="28" height="26" class="combo"/>
+<text x="238" y="196" class="combo tap"><tspan style="font-size: 70%">&amp;vim_write</tspan></text>
+</g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="700" y="183" width="28" height="26" class="combo"/>
+<text x="714" y="196" class="combo tap"><tspan style="font-size: 78%">&amp;vim_quit</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1972)" class="layer-mod_macros">
@@ -1761,6 +1793,14 @@ path.combo {
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="756" y="71" width="28" height="26" class="combo"/>
 <text x="770" y="84" class="combo tap">TAB</text>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="224" y="183" width="28" height="26" class="combo"/>
+<text x="238" y="196" class="combo tap"><tspan style="font-size: 70%">&amp;vim_write</tspan></text>
+</g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="700" y="183" width="28" height="26" class="combo"/>
+<text x="714" y="196" class="combo tap"><tspan style="font-size: 78%">&amp;vim_quit</tspan></text>
 </g>
 </g>
 </g>
@@ -2084,6 +2124,14 @@ path.combo {
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="756" y="71" width="28" height="26" class="combo"/>
 <text x="770" y="84" class="combo tap">TAB</text>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="224" y="183" width="28" height="26" class="combo"/>
+<text x="238" y="196" class="combo tap"><tspan style="font-size: 70%">&amp;vim_write</tspan></text>
+</g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="700" y="183" width="28" height="26" class="combo"/>
+<text x="714" y="196" class="combo tap"><tspan style="font-size: 78%">&amp;vim_quit</tspan></text>
 </g>
 </g>
 </g>
