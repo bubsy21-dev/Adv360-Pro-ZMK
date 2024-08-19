@@ -41,8 +41,9 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            hold-trigger-key-positions = <65>;
+            quick-tap-ms = <125>;
             tapping-term-ms = <200>;
+            hold-trigger-key-positions = <65>;
             flavor = "balanced";
         };
     };
@@ -68,7 +69,12 @@
 
         esc_homerow {
             bindings = <&kp ESC>;
-            key-positions = <32 31>;
+            key-positions = <17 18>;
+        };
+
+        tab_homerow {
+            bindings = <&kp TAB>;
+            key-positions = <23 24>;
         };
     };
 
@@ -77,11 +83,11 @@
 
         default_layer {
             bindings = <
-&trans   &trans          &trans          &trans              &trans     &trans  &mo 4                                                                  &mo 4        &trans  &trans        &trans               &trans             &trans           &trans
-&kp TAB  &kp Q           &kp W           &kp F               &kp P      &kp B   &none                                                                  &none        &kp J   &kp L         &kp U                &kp Y              &kp SEMICOLON    &trans
-&kp ESC  &hm LEFT_WIN A  &hm LEFT_ALT R  &hm LEFT_CONTROL S  &kp T      &kp G   &tog 2           &mo 1           &trans        &trans     &trans       &none        &kp M   &kp N         &hm RIGHT_CONTROL E  &hm RIGHT_ALT I    &hm RIGHT_GUI O  &trans
-&trans   &kp Z           &kp X           &kp C               &kp D      &kp V                                    &kp HOME      &kp PG_UP                            &kp K   &kp H         &kp COMMA            &kp DOT            &kp SLASH        &trans
-&mo 3    &trans          &trans          &kp LEFT_ARROW      &kp RIGHT          &lt 5 BACKSPACE  &sk LEFT_SHIFT  &kp END       &kp PG_DN  &lt 1 ENTER  &lt 2 SPACE          &kp UP_ARROW  &kp DOWN             &kp C_VOLUME_DOWN  &kp C_VOL_UP     &mo 4
+&trans  &trans          &trans          &trans              &trans     &trans  &mo 4                                                                  &mo 4        &trans  &trans        &trans               &trans             &trans           &trans
+&trans  &kp Q           &kp W           &kp F               &kp P      &kp B   &none                                                                  &none        &kp J   &kp L         &kp U                &kp Y              &kp SEMICOLON    &trans
+&trans  &hm LEFT_WIN A  &hm LEFT_ALT R  &hm LEFT_CONTROL S  &kp T      &kp G   &tog 2           &mo 1           &trans        &trans     &trans       &none        &kp M   &kp N         &hm RIGHT_CONTROL E  &hm RIGHT_ALT I    &hm RIGHT_GUI O  &trans
+&trans  &kp Z           &kp X           &kp C               &kp D      &kp V                                    &kp HOME      &kp PG_UP                            &kp K   &kp H         &kp COMMA            &kp DOT            &kp SLASH        &trans
+&mo 3   &trans          &trans          &kp LEFT_ARROW      &kp RIGHT          &lt 5 BACKSPACE  &sk LEFT_SHIFT  &kp END       &kp PG_DN  &lt 1 ENTER  &lt 2 SPACE          &kp UP_ARROW  &kp DOWN             &kp C_VOLUME_DOWN  &kp C_VOL_UP     &mo 4
             >;
         };
 
