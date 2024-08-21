@@ -122,6 +122,11 @@
             bindings = <&select_line>;
             key-positions = <47 48>;
         };
+
+        hyphen {
+            bindings = <&kp MINUS>;
+            key-positions = <57 58>;
+        };
     };
 
     keymap {
