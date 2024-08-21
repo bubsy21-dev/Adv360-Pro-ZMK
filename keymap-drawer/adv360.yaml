@@ -479,3 +479,5 @@ combos:
   k: '&relative_dir'
 - p: [47, 48]
   k: '&select_line'
+- p: [57, 58]
+  k: '-'
