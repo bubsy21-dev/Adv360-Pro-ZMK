@@ -7,8 +7,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - mod_macros
-  - mod_macros
+  - mod
+  - mod
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -33,16 +33,16 @@ layers:
   - {t: A, h: LEFT WIN}
   - {t: R, h: LEFT ALT}
   - {t: S, h: LEFT CONTROL}
-  - T
+  - {t: T, h: LEFT SHIFT}
   - G
-  - {t: nav, h: toggle}
-  - symbols
   - {t: ▽, type: trans}
+  - symbols
+  - nav
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
   - M
-  - N
+  - {t: N, h: RIGHT SHIFT}
   - {t: E, h: RIGHT CONTROL}
   - {t: I, h: RIGHT ALT}
   - {t: O, h: RIGHT GUI}
@@ -74,9 +74,9 @@ layers:
   - {t: SPACE, h: nav}
   - UP ARROW
   - DOWN
-  - VOLUME DOWN
-  - VOL UP
-  - mod_macros
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - mod
   symbols:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -170,8 +170,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&vim_quit'
-  - '&vim_write'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -191,7 +191,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: default, h: toggle}
@@ -225,7 +225,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ENTER
-  - {t: SPACE, type: held}
+  - SPACE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -308,7 +308,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  mod_macros:
+  mod:
   - ''
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -325,9 +325,9 @@ layers:
   - {t: ▽, type: trans}
   - ''
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - RW
+  - PP
+  - FF
   - ''
   - '&bootloader'
   - '&bootloader'
@@ -356,10 +356,10 @@ layers:
   - ''
   - ''
   - ''
-  - ''
   - {t: ▽, type: trans}
+  - VOLUME DOWN
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - VOLUME UP
   - ''
   - BT CLR
   - BT CLR
@@ -471,3 +471,11 @@ combos:
   k: '&vim_write'
 - p: [54, 55]
   k: '&vim_quit'
+- p: [33, 32]
+  k: Gui+Ctl+ LEFT ARROW
+- p: [41, 40]
+  k: Gui+Ctl+ RIGHT ARROW
+- p: [32, 65]
+  k: '&relative_dir'
+- p: [47, 48]
+  k: '&select_line'
