@@ -1,10 +1,9 @@
+#include "general.h"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
-
-#include "general.h"
 
 / {
     behaviors {
@@ -80,6 +79,13 @@
             bindings = <&kp HOME &kp LEFT_SHIFT &kp END>;
             label = "SELECT_LINE";
         };
+
+        L_HYPR: L_HYPR {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(LA(LEFT_GUI)))>;
+            label = "L_HYPR";
+        };
     };
 
     combos {
@@ -140,7 +146,7 @@
 &trans  &kp Q           &kp W           &kp F               &kp P             &kp B   &none                                                                             &none        &kp J   &kp L              &kp U                &kp Y            &kp SEMICOLON    &trans
 &trans  &hm LEFT_WIN A  &hm LEFT_ALT R  &hm LEFT_CONTROL S  &hm LEFT_SHIFT T  &kp G   &trans                        &mo 1         &mo 2         &trans     &trans       &none        &kp M   &hm RIGHT_SHIFT N  &hm RIGHT_CONTROL E  &hm RIGHT_ALT I  &hm RIGHT_GUI O  &trans
 &trans  &kp Z           &kp X           &kp C               &kp D             &kp V                                               &kp HOME      &kp PG_UP                            &kp K   &kp H              &kp COMMA            &kp DOT          &kp SLASH        &trans
-&mo 3   &trans          &trans          &kp LEFT_ARROW      &kp RIGHT                 &smart_backspace 5 BACKSPACE  &smart_shift  &kp END       &kp PG_DN  &lt 1 ENTER  &lt 2 SPACE          &kp UP_ARROW       &kp DOWN             &trans           &trans           &mo 4
+&mo 3   &trans          &L_HYPR         &kp LEFT_ARROW      &kp RIGHT                 &smart_backspace 5 BACKSPACE  &smart_shift  &kp END       &kp PG_DN  &lt 1 ENTER  &lt 2 SPACE          &kp UP_ARROW       &kp DOWN             &trans           &trans           &mo 4
             >;
         };
 
@@ -176,11 +182,11 @@
 
         mod {
             bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1       &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4  &none                                                              &trans                  &none  &none       &none       &none  &none  &trans
-&none  &trans        &kp C_RW           &kp C_PP      &kp C_FF         &none         &bootloader                                                        &bootloader             &none  &none       &none       &none  &none  &none
-&none  &none         &trans             &trans        &trans           &none         &none        &bootloader  &none           &trans      &bootloader  &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
-&none  &trans        &kp C_VOLUME_DOWN  &trans        &kp C_VOLUME_UP  &none                                   &bt BT_CLR      &bt BT_CLR                                       &none  &none       &none       &none  &none  &none
-&none  &none         &none              &none         &none                          &bl BL_DEC   &bl BL_INC   &bl BL_TOG      &none       &kp C_PP     &kp C_MUTE                     &bl BL_INC  &bl BL_DEC  &none  &none  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4  &none                                                              &trans                  &none  &none       &none       &none  &none  &trans
+&none  &trans        &trans        &kp C_PP      &trans           &none         &bootloader                                                        &bootloader             &none  &none       &none       &none  &none  &none
+&none  &none         &trans        &trans        &trans           &none         &none        &bootloader  &none           &trans      &bootloader  &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
+&none  &trans        &trans        &kp C_VOL_DN  &kp C_VOLUME_UP  &none                                   &bt BT_CLR      &bt BT_CLR                                       &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none                          &bl BL_DEC   &bl BL_INC   &bl BL_TOG      &none       &kp C_PP     &kp C_MUTE                     &bl BL_INC  &bl BL_DEC  &none  &none  &none
             >;
         };
 
