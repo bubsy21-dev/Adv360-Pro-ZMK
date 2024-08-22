@@ -467,7 +467,7 @@ combos:
   k: ESC
 - p: [23, 24]
   k: TAB
-- p: [49, 50]
+- p: [50, 51]
   k: '&vim_write'
 - p: [54, 55]
   k: '&vim_quit'
