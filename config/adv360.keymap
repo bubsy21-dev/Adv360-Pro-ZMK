@@ -95,7 +95,7 @@
 
         combo_vimwrite {
             bindings = <&vim_write>;
-            key-positions = <49 50>;
+            key-positions = <50 51>;
         };
 
         combo_vimquit {
