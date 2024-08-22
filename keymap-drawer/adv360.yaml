@@ -63,7 +63,7 @@ layers:
   - {t: ▽, type: trans}
   - fn
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&L_HYPR'
   - LEFT ARROW
   - RIGHT
   - {t: BACKSPACE, h: num}
@@ -325,9 +325,9 @@ layers:
   - {t: ▽, type: trans}
   - ''
   - {t: ▽, type: trans}
-  - RW
+  - {t: ▽, type: trans}
   - PP
-  - FF
+  - {t: ▽, type: trans}
   - ''
   - '&bootloader'
   - '&bootloader'
@@ -357,8 +357,8 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
-  - VOLUME DOWN
   - {t: ▽, type: trans}
+  - VOL DN
   - VOLUME UP
   - ''
   - BT CLR
