@@ -5,9 +5,9 @@
     quick-release;             // no double capitalization when rolling keys
 };
 
-&sl {  // sticky-layer config
-    ignore-modifiers;          // allow chording sticky mods & layers
-};
+//&sl {  // sticky-layer config
+    //ignore-modifiers;          // allow chording sticky mods & layers
+//};
 
 &lt {  // layer-tap config
     flavor = "balanced";
