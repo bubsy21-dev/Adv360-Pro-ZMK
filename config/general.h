@@ -9,11 +9,11 @@
     //ignore-modifiers;          // allow chording sticky mods & layers
 //};
 
-&lt {  // layer-tap config
-    flavor = "balanced";
-    tapping-term-ms = <200>;
-    quick-tap-ms = <QUICK_TAP_MS>;
-};
+//&lt {  // layer-tap config
+    //flavor = "balanced";
+    //tapping-term-ms = <200>;
+    //quick-tap-ms = <QUICK_TAP_MS>;
+//};
 
 // long-tap action on hold, short-tap action on all interrupts
 #define MT_CORE \
