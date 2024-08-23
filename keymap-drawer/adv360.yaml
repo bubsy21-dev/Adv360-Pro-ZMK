@@ -475,8 +475,6 @@ combos:
   k: Gui+Ctl+ LEFT ARROW
 - p: [41, 40]
   k: Gui+Ctl+ RIGHT ARROW
-- p: [32, 65]
-  k: '&relative_dir'
 - p: [47, 48]
   k: '&select_line'
 - p: [57, 58]
