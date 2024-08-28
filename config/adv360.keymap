@@ -139,7 +139,7 @@
         default_layer {
             bindings = <
 &trans  &trans          &trans          &trans              &trans            &trans  &mo 4                                                                             &mo 4        &trans  &trans             &trans               &trans           &trans           &trans
-&trans  &kp Q           &kp W           &kp F               &kp P             &kp B   &none                                                                             &none        &kp J   &kp L              &kp U                &kp Y            &kp SEMICOLON    &trans
+&trans  &kp Q           &kp W           &kp F               &kp P             &kp B   &none                                                                             &none        &kp J   &kp L              &kp U                &kp Y            &kp SEMICOLON    &kp CAPSLOCK
 &trans  &hm LEFT_WIN A  &hm LEFT_ALT R  &hm LEFT_CONTROL S  &hm LEFT_SHIFT T  &kp G   &trans                        &mo 1         &mo 2         &trans     &trans       &none        &kp M   &hm RIGHT_SHIFT N  &hm RIGHT_CONTROL E  &hm RIGHT_ALT I  &hm RIGHT_GUI O  &trans
 &trans  &kp Z           &kp X           &kp C               &kp D             &kp V                                               &kp HOME      &kp PG_UP                            &kp K   &kp H              &kp COMMA            &kp DOT          &kp SLASH        &trans
 &mo 3   &trans          &L_HYPR         &kp LEFT_ARROW      &kp RIGHT                 &smart_backspace 5 BACKSPACE  &smart_shift  &kp END       &kp PG_DN  &lt 1 ENTER  &lt 2 SPACE          &kp UP_ARROW       &kp DOWN             &trans           &trans           &mo 4
