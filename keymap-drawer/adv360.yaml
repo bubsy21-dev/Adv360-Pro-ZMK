@@ -28,7 +28,7 @@ layers:
   - U
   - Y
   - ;
-  - {t: ▽, type: trans}
+  - CAPSLOCK
   - {t: ▽, type: trans}
   - {t: A, h: LEFT WIN}
   - {t: R, h: LEFT ALT}
