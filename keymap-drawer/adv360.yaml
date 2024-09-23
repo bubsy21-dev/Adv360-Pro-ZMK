@@ -431,7 +431,7 @@ layers:
   - '5'
   - '6'
   - /
-  - .
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -556,3 +556,6 @@ combos:
   k: '&select_line'
 - p: [57, 58]
   k: '-'
+- p: [44, 43]
+  k: .
+  l: [num]
