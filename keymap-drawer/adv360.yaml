@@ -451,12 +451,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: LEFT SHIFT, h: sticky}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '0', type: held}
+  - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -554,9 +554,5 @@ combos:
   k: Gui+Ctl+ RIGHT ARROW
 - p: [47, 48]
   k: '&select_line'
-- p: [57, 58]
-  k: '-'
 - p: [65, 70]
-  k: {t: num, h: sticky}
-- p: [15, 16]
-  k: '~'
+  k: {t: num, h: toggle}
