@@ -138,11 +138,11 @@
 
         default_layer {
             bindings = <
-&tog 0  &trans          &trans          &trans              &trans            &trans  &mo 4                                                            &mo 4      &trans  &trans             &trans               &trans           &trans           &trans
-&trans  &kp Q           &kp W           &kp F               &kp P             &kp B   &none                                                            &none      &kp J   &kp L              &kp U                &kp Y            &kp SEMICOLON    &kp CAPSLOCK
-&trans  &hm LEFT_WIN A  &hm LEFT_ALT R  &hm LEFT_CONTROL S  &hm LEFT_SHIFT T  &kp G   &trans         &sl 6         &trans        &trans     &sl 1      &none      &kp M   &hm RIGHT_SHIFT N  &hm RIGHT_CONTROL E  &hm RIGHT_ALT I  &hm RIGHT_GUI O  &trans
-&trans  &kp Z           &kp X           &kp C               &kp D             &kp V                                &kp HOME      &kp PG_UP                        &kp K   &kp H              &kp COMMA            &kp DOT          &kp SLASH        &trans
-&sl 3   &trans          &L_HYPR         &kp LEFT_ARROW      &kp RIGHT                 &kp BACKSPACE  &smart_shift  &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP_ARROW       &kp DOWN             &trans           &trans           &sl 4
+&tog 0  &trans          &trans          &trans              &trans            &trans  &mo 4                                                                           &mo 4      &trans  &trans             &trans               &trans           &trans           &trans
+&trans  &kp Q           &kp W           &kp F               &kp P             &kp B   &none                                                                           &none      &kp J   &kp L              &kp U                &kp Y            &kp SEMICOLON    &kp CAPSLOCK
+&trans  &hm LEFT_WIN A  &hm LEFT_ALT R  &hm LEFT_CONTROL S  &hm LEFT_SHIFT T  &kp G   &trans                        &sl 6         &trans        &trans     &sl 1      &none      &kp M   &hm RIGHT_SHIFT N  &hm RIGHT_CONTROL E  &hm RIGHT_ALT I  &hm RIGHT_GUI O  &trans
+&trans  &kp Z           &kp X           &kp C               &kp D             &kp V                                               &kp HOME      &kp PG_UP                        &kp K   &kp H              &kp COMMA            &kp DOT          &kp SLASH        &trans
+&sl 3   &trans          &L_HYPR         &kp LEFT_ARROW      &kp RIGHT                 &smart_backspace 5 BACKSPACE  &smart_shift  &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP_ARROW       &kp DOWN             &trans           &trans           &sl 4
             >;
         };
 
