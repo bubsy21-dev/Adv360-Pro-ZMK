@@ -141,8 +141,8 @@
             key-positions = <57 58>;
         };
 
-        number_layer_toggle {
-            bindings = <&tog 5>;
+        num_word {
+            bindings = <&num_word 5>;
             key-positions = <65 70>;
         };
     };
