@@ -49,6 +49,17 @@
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
         };
+
+        long_hold_mt: long_hold_mt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LONG_HOLD_MT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <500>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <55 56 57 43 42 41 23 24 25 70>;
+        };
     };
 
     macros {
@@ -188,11 +199,11 @@
 
         layer_num {
             bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans  &trans                                              &trans        &trans        &kp F10          &kp F11          &kp F12          &trans        &trans
-&trans  &trans    &trans    &kp DOT    &trans     &trans  &trans                                              &trans        &kp LS(PLUS)  &mt F7 N7        &mt F8 NUMBER_8  &mt F9 NUMBER_9  &kp LS(STAR)  &trans
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans  &trans  &trans          &trans      &trans  &trans  &trans        &kp MINUS     &mt F4 NUMBER_4  &mt F5 NUMBER_5  &mt F6 NUMBER_6  &kp FSLH      &trans
-&trans  &trans    &trans    &trans     &trans     &trans                          &trans      &trans                        &kp EQUAL     &mt F1 NUMBER_1  &mt F2 NUMBER_2  &mt F3 NUMBER_3  &kp BSLH      &trans
-&trans  &trans    &trans    &trans     &trans             &trans  &sk LEFT_SHIFT  &trans      &trans  &trans  &kp NUMBER_0                &trans           &trans           &trans           &trans        &trans
+&trans  &trans    &trans    &trans     &trans     &trans  &trans                                              &trans        &trans        &kp F10                    &kp F11                    &kp F12                    &trans        &trans
+&trans  &trans    &trans    &kp DOT    &trans     &trans  &trans                                              &trans        &kp LS(PLUS)  &long_hold_mt F7 N7        &long_hold_mt F8 NUMBER_8  &long_hold_mt F9 NUMBER_9  &kp LS(STAR)  &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans  &trans  &trans          &trans      &trans  &trans  &trans        &kp MINUS     &long_hold_mt F4 NUMBER_4  &long_hold_mt F5 NUMBER_5  &long_hold_mt F6 NUMBER_6  &kp FSLH      &trans
+&trans  &trans    &trans    &trans     &trans     &trans                          &trans      &trans                        &kp EQUAL     &long_hold_mt F1 NUMBER_1  &long_hold_mt F2 NUMBER_2  &long_hold_mt F3 NUMBER_3  &kp BSLH      &trans
+&trans  &trans    &trans    &trans     &trans             &trans  &sk LEFT_SHIFT  &trans      &trans  &trans  &kp NUMBER_0                &trans                     &trans                     &trans                     &trans        &trans
             >;
         };
 
