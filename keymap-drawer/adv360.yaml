@@ -557,4 +557,4 @@ combos:
 - p: [57, 58]
   k: '-'
 - p: [65, 70]
-  k: {t: num, h: toggle}
+  k: '&num_word 5'

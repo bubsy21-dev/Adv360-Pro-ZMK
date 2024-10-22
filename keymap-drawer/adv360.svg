@@ -491,9 +491,9 @@ path.combo {
 <path d="M504,347 l-166,0" class="combo"/>
 <path d="M504,347 l166,0" class="combo"/>
 <rect rx="6" ry="6" x="490" y="334" width="28" height="26" class="combo"/>
-<a href="#num">
-<text x="504" y="347" class="combo tap layer-activator">num</text>
-</a><text x="504" y="358" class="combo hold">toggle</text>
+<text x="504" y="347" class="combo tap">
+<tspan x="504" dy="-0.6em" style="font-size: 78%">&amp;num_word</tspan><tspan x="504" dy="1.2em" style="font-size: 78%">5</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -846,9 +846,9 @@ path.combo {
 <path d="M504,347 l-166,0" class="combo"/>
 <path d="M504,347 l166,0" class="combo"/>
 <rect rx="6" ry="6" x="490" y="334" width="28" height="26" class="combo"/>
-<a href="#num">
-<text x="504" y="347" class="combo tap layer-activator">num</text>
-</a><text x="504" y="358" class="combo hold">toggle</text>
+<text x="504" y="347" class="combo tap">
+<tspan x="504" dy="-0.6em" style="font-size: 78%">&amp;num_word</tspan><tspan x="504" dy="1.2em" style="font-size: 78%">5</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -1222,9 +1222,9 @@ path.combo {
 <path d="M504,347 l-166,0" class="combo"/>
 <path d="M504,347 l166,0" class="combo"/>
 <rect rx="6" ry="6" x="490" y="334" width="28" height="26" class="combo"/>
-<a href="#num">
-<text x="504" y="347" class="combo tap layer-activator">num</text>
-</a><text x="504" y="358" class="combo hold">toggle</text>
+<text x="504" y="347" class="combo tap">
+<tspan x="504" dy="-0.6em" style="font-size: 78%">&amp;num_word</tspan><tspan x="504" dy="1.2em" style="font-size: 78%">5</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -1585,9 +1585,9 @@ path.combo {
 <path d="M504,347 l-166,0" class="combo"/>
 <path d="M504,347 l166,0" class="combo"/>
 <rect rx="6" ry="6" x="490" y="334" width="28" height="26" class="combo"/>
-<a href="#num">
-<text x="504" y="347" class="combo tap layer-activator">num</text>
-</a><text x="504" y="358" class="combo hold">toggle</text>
+<text x="504" y="347" class="combo tap">
+<tspan x="504" dy="-0.6em" style="font-size: 78%">&amp;num_word</tspan><tspan x="504" dy="1.2em" style="font-size: 78%">5</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -1920,9 +1920,9 @@ path.combo {
 <path d="M504,347 l-166,0" class="combo"/>
 <path d="M504,347 l166,0" class="combo"/>
 <rect rx="6" ry="6" x="490" y="334" width="28" height="26" class="combo"/>
-<a href="#num">
-<text x="504" y="347" class="combo tap layer-activator">num</text>
-</a><text x="504" y="358" class="combo hold">toggle</text>
+<text x="504" y="347" class="combo tap">
+<tspan x="504" dy="-0.6em" style="font-size: 78%">&amp;num_word</tspan><tspan x="504" dy="1.2em" style="font-size: 78%">5</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -2280,9 +2280,9 @@ path.combo {
 <path d="M504,347 l-166,0" class="combo"/>
 <path d="M504,347 l166,0" class="combo"/>
 <rect rx="6" ry="6" x="490" y="334" width="28" height="26" class="combo"/>
-<a href="#num">
-<text x="504" y="347" class="combo tap layer-activator">num</text>
-</a><text x="504" y="358" class="combo hold">toggle</text>
+<text x="504" y="347" class="combo tap">
+<tspan x="504" dy="-0.6em" style="font-size: 78%">&amp;num_word</tspan><tspan x="504" dy="1.2em" style="font-size: 78%">5</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -2632,9 +2632,9 @@ path.combo {
 <path d="M504,347 l-166,0" class="combo"/>
 <path d="M504,347 l166,0" class="combo"/>
 <rect rx="6" ry="6" x="490" y="334" width="28" height="26" class="combo"/>
-<a href="#num">
-<text x="504" y="347" class="combo tap layer-activator">num</text>
-</a><text x="504" y="358" class="combo hold">toggle</text>
+<text x="504" y="347" class="combo tap">
+<tspan x="504" dy="-0.6em" style="font-size: 78%">&amp;num_word</tspan><tspan x="504" dy="1.2em" style="font-size: 78%">5</tspan>
+</text>
 </g>
 </g>
 </g>
