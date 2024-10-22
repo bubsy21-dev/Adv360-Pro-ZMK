@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: adv360}
 layers:
   default:
-  - {t: ▽, type: trans}
+  - {t: default, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -36,8 +36,8 @@ layers:
   - {t: T, h: LEFT SHIFT}
   - G
   - {t: ▽, type: trans}
-  - symbols_2
-  - nav
+  - {t: symbols_2, h: sticky}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
@@ -66,7 +66,7 @@ layers:
   - '&L_HYPR'
   - LEFT ARROW
   - RIGHT
-  - {t: BACKSPACE, h: num}
+  - BACKSPACE
   - {t: LEFT SHIFT, h: sticky, s: '&caps_word'}
   - END
   - PG DN
@@ -76,7 +76,7 @@ layers:
   - DOWN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - mod
+  - {t: mod, h: sticky}
   symbols:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -191,7 +191,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: default, h: toggle}
@@ -451,7 +451,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: LEFT SHIFT, h: sticky}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -556,6 +556,5 @@ combos:
   k: '&select_line'
 - p: [57, 58]
   k: '-'
-- p: [44, 43]
-  k: .
-  l: [num]
+- p: [65, 70]
+  k: {t: num, h: toggle}
