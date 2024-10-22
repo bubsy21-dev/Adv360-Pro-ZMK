@@ -127,19 +127,9 @@
             key-positions = <47 48>;
         };
 
-        hyphen {
-            bindings = <&kp MINUS>;
-            key-positions = <57 58>;
-        };
-
         num_word {
-            bindings = <&sl 5>;
+            bindings = <&tog 5>;
             key-positions = <65 70>;
-        };
-
-        tilde {
-            bindings = <&kp TILDE>;
-            key-positions = <15 16>;
         };
     };
 
