@@ -494,6 +494,10 @@ path.combo {
 <text x="504" y="347" class="combo tap layer-activator">num</text>
 </a><text x="504" y="358" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="868" y="190" width="28" height="26" class="combo"/>
+<text x="882" y="203" class="combo tap">-</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 493)" class="layer-symbols">
@@ -844,6 +848,10 @@ path.combo {
 <a href="#num">
 <text x="504" y="347" class="combo tap layer-activator">num</text>
 </a><text x="504" y="358" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="868" y="190" width="28" height="26" class="combo"/>
+<text x="882" y="203" class="combo tap">-</text>
 </g>
 </g>
 </g>
@@ -1217,6 +1225,10 @@ path.combo {
 <text x="504" y="347" class="combo tap layer-activator">num</text>
 </a><text x="504" y="358" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="868" y="190" width="28" height="26" class="combo"/>
+<text x="882" y="203" class="combo tap">-</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1479)" class="layer-fn">
@@ -1576,6 +1588,10 @@ path.combo {
 <text x="504" y="347" class="combo tap layer-activator">num</text>
 </a><text x="504" y="358" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="868" y="190" width="28" height="26" class="combo"/>
+<text x="882" y="203" class="combo tap">-</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1972)" class="layer-mod">
@@ -1906,6 +1922,10 @@ path.combo {
 <a href="#num">
 <text x="504" y="347" class="combo tap layer-activator">num</text>
 </a><text x="504" y="358" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="868" y="190" width="28" height="26" class="combo"/>
+<text x="882" y="203" class="combo tap">-</text>
 </g>
 </g>
 </g>
@@ -2271,6 +2291,10 @@ path.combo {
 <text x="504" y="347" class="combo tap layer-activator">num</text>
 </a><text x="504" y="358" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="868" y="190" width="28" height="26" class="combo"/>
+<text x="882" y="203" class="combo tap">-</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 2958)" class="layer-symbols_2">
@@ -2618,6 +2642,10 @@ path.combo {
 <a href="#num">
 <text x="504" y="347" class="combo tap layer-activator">num</text>
 </a><text x="504" y="358" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="868" y="190" width="28" height="26" class="combo"/>
+<text x="882" y="203" class="combo tap">-</text>
 </g>
 </g>
 </g>

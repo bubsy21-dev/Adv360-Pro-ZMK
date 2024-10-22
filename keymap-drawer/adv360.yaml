@@ -556,3 +556,5 @@ combos:
   k: '&select_line'
 - p: [65, 70]
   k: {t: num, h: toggle}
+- p: [58, 57]
+  k: '-'
