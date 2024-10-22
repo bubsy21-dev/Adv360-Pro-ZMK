@@ -142,6 +142,11 @@
             bindings = <&tog 5>;
             key-positions = <65 70>;
         };
+
+        hyphen {
+            bindings = <&kp MINUS>;
+            key-positions = <58 57>;
+        };
     };
 
     keymap {
