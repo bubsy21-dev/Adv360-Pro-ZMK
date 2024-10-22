@@ -136,6 +136,11 @@
             bindings = <&sl 5>;
             key-positions = <65 70>;
         };
+
+        tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <15 16>;
+        };
     };
 
     keymap {
@@ -193,11 +198,11 @@
 
         layer_num {
             bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans  &trans                                              &trans        &trans        &trans  &trans  &trans  &trans        &trans
-&trans  &trans    &trans    &kp DOT    &trans     &trans  &trans                                              &trans        &kp LS(PLUS)  &kp N7  &kp N8  &kp N9  &kp LS(STAR)  &trans
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans  &trans  &trans          &trans      &trans  &trans  &trans        &kp MINUS     &kp N4  &kp N5  &kp N6  &kp FSLH      &trans
-&trans  &trans    &trans    &trans     &trans     &trans                          &trans      &trans                        &kp EQUAL     &kp N1  &kp N2  &kp N3  &kp BSLH      &trans
-&trans  &trans    &trans    &trans     &trans             &trans  &sk LEFT_SHIFT  &trans      &trans  &trans  &kp NUMBER_0                &trans  &trans  &trans  &trans        &trans
+&trans  &trans    &trans    &trans     &trans     &trans  &trans                                              &trans        &trans        &kp F10          &kp F11          &kp F12          &trans        &trans
+&trans  &trans    &trans    &kp DOT    &trans     &trans  &trans                                              &trans        &kp LS(PLUS)  &mt F7 N7        &mt F8 NUMBER_8  &mt F9 NUMBER_9  &kp LS(STAR)  &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans  &trans  &trans          &trans      &trans  &trans  &trans        &kp MINUS     &mt F4 NUMBER_4  &mt F5 NUMBER_5  &mt F6 NUMBER_6  &kp FSLH      &trans
+&trans  &trans    &trans    &trans     &trans     &trans                          &trans      &trans                        &kp EQUAL     &mt F1 NUMBER_1  &mt F2 NUMBER_2  &mt F3 NUMBER_3  &kp BSLH      &trans
+&trans  &trans    &trans    &trans     &trans             &trans  &sk LEFT_SHIFT  &trans      &trans  &trans  &kp NUMBER_0                &trans           &trans           &trans           &trans        &trans
             >;
         };
 
