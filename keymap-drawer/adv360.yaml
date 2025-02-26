@@ -100,9 +100,9 @@ layers:
   - '|'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Sft+ ^
-  - Sft+ {
-  - Sft+ }
+  - Sft+^
+  - Sft+{
+  - Sft+}
   - '['
   - ']'
   - {t: ▽, type: trans}
@@ -118,10 +118,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Sft+ @
-  - Sft+ (
-  - Sft+ )
-  - Sft+ _
+  - Sft+@
+  - Sft+(
+  - Sft+)
+  - Sft+_
   - ;
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -134,9 +134,9 @@ layers:
   - {t: ▽, type: trans}
   - /
   - '-'
-  - Sft+ <
-  - Sft+ >
-  - Sft+ "
+  - Sft+<
+  - Sft+>
+  - Sft+"
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -177,11 +177,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+ Y
-  - Ctl+ V
-  - Ctl+ C
-  - Ctl+ X
-  - Ctl+ Z
+  - Ctl+Y
+  - Ctl+V
+  - Ctl+C
+  - Ctl+X
+  - Ctl+Z
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LGUI
@@ -272,7 +272,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Sft+ F11
+  - Sft+F11
   - F4
   - F5
   - F6
@@ -286,7 +286,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+ +
+  - Ctl++
   - F1
   - F2
   - F3
@@ -408,11 +408,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Sft+ +
+  - Sft++
   - '7'
   - '8'
   - '9'
-  - Sft+ *
+  - Sft+*
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LGUI
@@ -472,9 +472,9 @@ combos:
 - p: [54, 55]
   k: '&vim_quit'
 - p: [33, 32]
-  k: Gui+Ctl+ LEFT ARROW
+  k: Gui+Ctl+LEFT ARROW
 - p: [41, 40]
-  k: Gui+Ctl+ RIGHT ARROW
+  k: Gui+Ctl+RIGHT ARROW
 - p: [47, 48]
   k: '&select_line'
 - p: [57, 58]
