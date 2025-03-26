@@ -146,11 +146,11 @@
 
         default_layer {
             bindings = <
-&trans  &trans          &trans          &trans              &trans            &trans  &mo 4                                                                             &mo 4        &trans  &trans             &trans               &trans           &trans           &trans
+&tog 5  &trans          &trans          &trans              &trans            &trans  &mo 4                                                                             &mo 4        &trans  &trans             &trans               &trans           &trans           &trans
 &trans  &kp Q           &kp W           &kp F               &kp P             &kp B   &none                                                                             &none        &kp J   &kp L              &kp U                &kp Y            &kp SEMICOLON    &kp CAPSLOCK
 &trans  &hm LEFT_WIN A  &hm LEFT_ALT R  &hm LEFT_CONTROL S  &hm LEFT_SHIFT T  &kp G   &trans                        &mo 1         &mo 2         &trans     &trans       &none        &kp M   &hm RIGHT_SHIFT N  &hm RIGHT_CONTROL E  &hm RIGHT_ALT I  &hm RIGHT_GUI O  &trans
 &trans  &kp Z           &kp X           &kp C               &kp D             &kp V                                               &kp HOME      &kp PG_UP                            &kp K   &kp H              &kp COMMA            &kp DOT          &kp SLASH        &trans
-&mo 3   &trans          &L_HYPR         &kp LEFT_ARROW      &kp RIGHT                 &smart_backspace 5 BACKSPACE  &smart_shift  &kp END       &kp PG_DN  &lt 1 ENTER  &lt 2 SPACE          &kp UP_ARROW       &kp DOWN             &trans           &trans           &mo 4
+&mo 3   &trans          &L_HYPR         &kp LEFT_ARROW      &kp RIGHT                 &smart_backspace 6 BACKSPACE  &smart_shift  &kp END       &kp PG_DN  &lt 1 ENTER  &lt 2 SPACE          &kp UP_ARROW       &kp DOWN             &trans           &trans           &mo 4
             >;
         };
 
@@ -194,6 +194,16 @@
             >;
         };
 
+        mac_layer {
+            bindings = <
+&tog 5  &trans          &trans          &trans              &trans            &trans  &mo 4                                                                             &mo 4        &trans  &trans             &trans               &trans           &trans           &trans
+&trans  &kp Q           &kp W           &kp F               &kp P             &kp B   &none                                                                             &none        &kp J   &kp L              &kp U                &kp Y            &kp SEMICOLON    &kp CAPSLOCK
+&trans  &hm LEFT_CONTROL A  &hm LEFT_ALT R  &hm LEFT_GUI S  &hm LEFT_SHIFT T  &kp G   &trans                        &mo 1         &mo 2         &trans     &trans       &none        &kp M   &hm RIGHT_SHIFT N  &hm RIGHT_GUI E  &hm RIGHT_ALT I  &hm RIGHT_CONTROL O  &trans
+&trans  &kp Z           &kp X           &kp C               &kp D             &kp V                                               &kp HOME      &kp PG_UP                            &kp K   &kp H              &kp COMMA            &kp DOT          &kp SLASH        &trans
+&mo 3   &trans          &L_HYPR         &kp LEFT_ARROW      &kp RIGHT                 &smart_backspace 6 BACKSPACE  &smart_shift  &kp END       &kp PG_DN  &lt 1 ENTER  &lt 2 SPACE          &kp UP_ARROW       &kp DOWN             &trans           &trans           &mo 4
+            >;
+        };
+
         layer_num {
             bindings = <
 &trans  &trans    &trans    &trans     &trans     &trans  &trans                                              &trans        &trans        &trans  &trans  &trans  &trans        &trans
@@ -202,24 +212,26 @@
 &trans  &trans    &trans    &trans     &trans     &trans                          &trans      &trans                        &kp EQUAL     &kp N1  &kp N2  &kp N3  &kp BSLH      &trans
 &trans  &trans    &trans    &trans     &trans             &trans  &sk LEFT_SHIFT  &trans      &trans  &trans  &kp NUMBER_0                &trans  &trans  &trans  &trans        &trans
             >;
-    extra1 { 
-      display-name = "Red";    
-      status = "reserved";
-    };
+        };
 
-    extra2 { 
-      display-name = "Purple";    
-      status = "reserved";
-    };
+        extra1 { 
+          display-name = "Red";    
+          status = "reserved";
+        };
 
-    extra3 { 
-      display-name = "Cyan";    
-      status = "reserved";
-    };
+        extra2 { 
+          display-name = "Purple";    
+          status = "reserved";
+        };
 
-    extra4 { 
-      display-name = "Yellow";    
-      status = "reserved";
+        extra3 { 
+          display-name = "Cyan";    
+          status = "reserved";
+        };
+
+        extra4 { 
+          display-name = "Yellow";    
+          status = "reserved";
     };
   };
 };
