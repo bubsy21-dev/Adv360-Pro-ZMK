@@ -39,7 +39,7 @@ layers:
   - symbols
   - nav
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - symbols
   - ''
   - M
   - {t: N, h: RIGHT SHIFT}
@@ -424,7 +424,7 @@ layers:
   - symbols
   - nav
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - symbols
   - ''
   - M
   - {t: N, h: RIGHT SHIFT}
