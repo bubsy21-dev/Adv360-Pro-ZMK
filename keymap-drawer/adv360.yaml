@@ -386,7 +386,7 @@ layers:
   - ''
   - ''
   mac:
-  - {t: mac, h: toggle}
+  - {t: default, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
