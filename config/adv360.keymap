@@ -155,11 +155,11 @@
 
         layer_symbols {
             bindings = <
-&trans  &trans           &trans          &trans        &trans         &trans         &trans                                                     &trans  &trans         &trans        &trans        &trans         &trans       &trans
-&trans  &kp SQT          &kp TILDE       &kp HASH      &kp AMPERSAND  &kp PIPE       &trans                                                     &trans  &kp LS(CARET)  &kp LS(LBRC)  &kp LS(RBRC)  &kp LBKT       &kp RBKT     &trans
-&trans  &kp EXCLAMATION  &kp UNDERSCORE  &kp COLON     &kp EQUAL      &kp DOLLAR     &trans         &trans          &trans      &trans  &trans  &trans  &kp LS(AT)     &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(UNDER)  &kp SEMI     &trans
-&trans  &kp PERCENT      &kp QUESTION    &kp ASTERISK  &kp PLUS       &kp BACKSLASH                                 &trans      &trans                  &kp FSLH       &kp MINUS     &kp LS(LT)    &kp LS(GT)     &kp LS(DQT)  &trans
-&trans  &trans           &trans          &trans        &trans                        &kp BACKSPACE  &sk LEFT_SHIFT  &trans      &trans  &trans  &trans                 &trans        &trans        &trans         &trans       &trans
+&trans     &trans           &trans          &trans        &trans         &trans         &trans                                                     &trans  &trans         &trans        &trans        &trans         &trans       &trans
+&trans     &kp SQT          &kp TILDE       &kp HASH      &kp AMPERSAND  &kp PIPE       &trans                                                     &trans  &kp LS(CARET)  &kp LS(LBRC)  &kp LS(RBRC)  &kp LBKT       &kp RBKT     &trans
+&kp GRAVE  &kp EXCLAMATION  &kp UNDERSCORE  &kp COLON     &kp EQUAL      &kp DOLLAR     &trans         &trans          &trans      &trans  &trans  &trans  &kp LS(AT)     &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(UNDER)  &kp SEMI     &trans
+&trans     &kp PERCENT      &kp QUESTION    &kp ASTERISK  &kp PLUS       &kp BACKSLASH                                 &trans      &trans                  &kp FSLH       &kp MINUS     &kp LS(LT)    &kp LS(GT)     &kp LS(DQT)  &trans
+&trans     &trans           &trans          &trans        &trans                        &kp BACKSPACE  &sk LEFT_SHIFT  &trans      &trans  &trans  &trans                 &trans        &trans        &trans         &trans       &trans
             >;
         };
 
